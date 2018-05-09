@@ -33,4 +33,4 @@ var server = http.createServer(function (req, res) {
             };
             stream.pipe(res);
     },1000);
-}).listen(8080);
+}).listen(process.env.PORT || 8080);
