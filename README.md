@@ -31,5 +31,7 @@ docker pull anschoewe/http-streaming-example:latest
 docker run -d -p 8080:8080 --name http-streaming-example anschoewe/http-streaming-example:latest
 
 # Deploying on Azure Container Instance (hints)
-DNS Label:            http-chunked
-Environment variable: "PORT":80
+Name:					http-chunked
+Image:					anschoewe/http-streaming-example
+DNS Label:				http-chunked
+Environment variable:	"PORT":80
