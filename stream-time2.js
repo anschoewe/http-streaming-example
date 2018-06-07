@@ -4,7 +4,7 @@ const CRLF = '\r\n';
  
 http = require('http');
 var server = http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain;'});
+    res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8;', 'Transfer-Encoding': 'chunked'});
 
     // some browsers only render the first browser response after 1KB of data
     var randomStr = "";
